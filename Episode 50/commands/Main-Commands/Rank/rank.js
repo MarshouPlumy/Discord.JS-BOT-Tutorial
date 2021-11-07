@@ -92,7 +92,7 @@ module.exports = (client) => {
             ctx.clip()
 
             const avatar = await loadImage(user.user.displayAvatarURL({ format: 'jpg' }))
-            ctx.drawImage(avatar, 40, 40, 250, 250)
+            ctx.drawImage(avatar, 35, 35, 250, 250)
 
             const attachment = new MessageAttachment(canvas.toBuffer(), 'rank.png')
 
